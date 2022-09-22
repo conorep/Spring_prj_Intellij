@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Candy</title>
+</head>
+<body>
+    <h1 th:text="${title.toUpperCase()}">My Favorite</h1>
+    <p th:text="${favorite}"></p>
+    <p th:text="'Cost: $' + ${favorite.getCost()}"></p>
+    <p th:text="'Type: '+ ${favorite.getType()}" />
+</body>
+</html>
